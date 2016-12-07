@@ -1,0 +1,12 @@
+version: '2'
+services:
+    subversion:
+        build: ./
+        image: subversion
+        hostname: subversion
+        ports:
+            - "80:80"
+        volumes:
+            - srv:/srv
+volumes:
+  srv:
